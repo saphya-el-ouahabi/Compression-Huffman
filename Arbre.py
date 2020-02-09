@@ -43,7 +43,7 @@ class Arbre:
 ###############################################################################
         
 #méthode qui parcourt l'arbre depuis son noeud racine "en profondeur"
-#jusqu'au fils en partant du premier à gauche
+#jusqu'aux fils en partant du premier à gauche
 #en affichant les labels de ces derniers
     def profondeur(self,char,code=""):
         
