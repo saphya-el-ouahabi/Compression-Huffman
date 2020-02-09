@@ -6,9 +6,10 @@ Created on Wed Jan 29 08:59:59 2020
 """
 from Arbre import Arbre
 
-##############################################################################
-###########################     CLASSE FICHIER       #########################
-##############################################################################
+###############################################################################
+###########################     CLASSE FICHIER       ##########################
+###############################################################################
+
 class Fichier:
     
     def __init__(self,fichier):
@@ -269,18 +270,17 @@ class Fichier:
         print("taux de compression:",self.tx_compression(longueurRes2))
     ##    
         
-#Méthode pour convertir la chaîne binaire de longueur quelconque 
-#en -> nombre entier positif
+#convertir la chaîne binaire de longueur quelconque 
+#en décimal-> nombre entier positif
         
         listeDec=[]
         for element in resultFinal:
             listeDec.append(int(element,2))  
-    
         #print("binaire to decimal",listeDec)
             
                 
-       #création du fichier final !! 
-        with open(self.fichier + '_comp.bin', 'wb') as f: #wb= pour écrire en binaire
+  #création du fichier final:
+        with open(self.fichier + '_comp.bin', 'wb') as f: #wb:pour w en binaire
 
             for i in listeDec:     
                 i_byte=(i).to_bytes(1,byteorder='big') #transforme str en byte  
