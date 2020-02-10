@@ -7,5 +7,7 @@ Pour utiliser le programme, il suffit d'avoir Python 3.7 et de télécharger les
 Pour compresser un fichier, il faut, dans un premier temps, modifier/choisir dans le main.py le fichier texte que l’on souhaite compresser (fichier=”nom du fichier.txt”).
 Puis il faut lancer le main.py pour compresser un fichier. 
 
-Après exécution, l’alphabet ordonné et l’arbre s’afficheront dans la console, ainsi que le nombre de caractère initial et final (une fois compressé), puis le taux de compression du fichier donné. 
+Après exécution, l’alphabet ordonné et l’arbre s’afficheront dans la console, ainsi que le nombre de caractère initial et final (càd une fois compressé), puis le taux de compression du fichier donné. 
+
+Et bien évidemment, cela va créer le fichier compressé avec le nom du fichier texte choisi ("montexte_comp.bin") et un fichier des fréquences de chaque caractères du fichier texte initial ("montexte_freq.txt").
 
